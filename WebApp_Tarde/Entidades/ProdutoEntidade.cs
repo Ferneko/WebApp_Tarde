@@ -1,4 +1,6 @@
-﻿namespace WebApp_Tarde.Entidades
+﻿using WebApp_Tarde.Controllers;
+
+namespace WebApp_Tarde.Entidades
 {
     public class ProdutoEntidade
     {
@@ -6,5 +8,8 @@
         public string Descricao { get; set; }
         public decimal Valor { get; set; }
         public bool Ativo { get; set; }
+
+        public CategoriaEntidade Categoria { get; set; }
+        public int CategoriaId { get; set; }
     }
 }
